@@ -3,41 +3,46 @@
 📅 April 14 – May 24, 2025
 
 This repository is a complete archive of my 41-day Embedded Systems and IoT development journey.  
-The journey includes Python fundamentals, logic building, C programming, Arduino, UART, GUI, and ESP32-based IoT projects.
+The journey includes Python basics, logic design, C programming, Arduino, UART, GUI, and ESP32-based IoT projects.
 
 ---
 
 ## 📘 Daily Progress Log
 
 - ✅ **Day 1** – Python Intro: `print()`, `input()`, data types  
-- ✅ **Day 2** – Conditional Statements: 3-number comparison  
-- ✅ **Day 3** – Loops + Exception Handling: min/max finder  
-- ⏳ **Day 4** – Functions, Strings (coming next...)  
-- ⏳ **Day 5** – Quiz + Python Certificate (completed, push pending)
+- ✅ **Day 2** – Conditionals: age check, equality logic  
+- ✅ **Day 3** – Loops + try/except: min/max finder  
+- ✅ **Day 4** – Functions: Age classifier with input validation  
+- ✅ **Day 5** – Python Certificate earned (Coursera – UMich)
 
 ---
 
 ## 💻 Projects
 
 ### 📄 Day1_PythonBasics.py  
-> Simple input/output, type conversion, and variable usage.  
-Used: `print()`, `input()`, `int()`, `float()`, `str()`
+Simple input/output, type conversion, and variable usage.  
+Used: `print()`, `input()`, `int()`, `float()`
 
 ### 📄 Day2_Conditionals.py  
-> Takes 3 numbers from user and checks if all or two are equal.  
-Also prints the max and min values if none are equal.
+Compares 3 numbers, prints if all/two are equal, and shows the biggest/smallest.  
+Used: `if`, `elif`, `else`, `max()`, `min()`
 
 ### 📄 Day3_Loops_CompareNumbers.py  
-> Accepts unlimited numeric input using `while True`.  
-Handles non-numeric input with `try/except`, then returns maximum and minimum values entered.  
-Used: `while`, `break`, `continue`, `int()`, `try/except`
+User enters numbers until `"done"`.  
+Program returns the max/min values and handles non-numeric input.  
+Used: `while`, `try/except`, `int()`, `break`, `continue`
+
+### 📄 Day4_Functions_Strings.py  
+Asks user's age and classifies them (child, teen, adult, senior).  
+Shows function definition and `return` usage with input error handling.  
+Used: `def`, `return`, `int()`, `try/except`, `if/elif/else`
 
 ---
 
 ## 📎 Certificates
 
 - 🎓 Python for Everybody – University of Michigan (2025)  
-📄 [`certificates/python_umich.pdf`](certificates/python_umich.pdf)
+  [`certificates/python_umich.pdf`](certificates/python_umich.pdf)
 
 ---
 
