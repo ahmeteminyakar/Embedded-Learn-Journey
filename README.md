@@ -3,32 +3,44 @@
 📅 April 14 – May 24, 2025
 
 This repository is a complete archive of my 41-day Embedded Systems and IoT development journey.  
-The focus areas include Python, Embedded C, UART communication, FSM logic, sensor integration, GUI dashboards, and MQTT-based IoT systems using ESP32.
+The journey includes Python fundamentals, logic building, C programming, Arduino, UART, GUI, and ESP32-based IoT projects.
 
-## 🧠 Daily Log
-- ✅ Day 1: Python Introduction – `print()`, `input()`, data types  
-- ✅ Day 2: Advanced Conditional Statements – comparison logic with 3-number input
+---
+
+## 📘 Daily Progress Log
+
+- ✅ **Day 1** – Python Intro: `print()`, `input()`, data types  
+- ✅ **Day 2** – Conditional Statements: 3-number comparison  
+- ✅ **Day 3** – Loops + Exception Handling: min/max finder  
+- ⏳ **Day 4** – Functions, Strings (coming next...)  
+- ⏳ **Day 5** – Quiz + Python Certificate (completed, push pending)
+
+---
 
 ## 💻 Projects
 
-### 📄 Day1_PythonBasics.py
-- Prints user input, basic type conversion
-- Used: `input()`, `print()`, `str`, `int`, `float`
+### 📄 Day1_PythonBasics.py  
+> Simple input/output, type conversion, and variable usage.  
+Used: `print()`, `input()`, `int()`, `float()`, `str()`
 
-### 📄 Day2_Conditionals.py
-- Takes 3 numbers and compares:
-  - If all are equal
-  - If two are equal
-  - Otherwise prints the max & min
-- Used: `if`, `elif`, `else`, `max()`, `min()`, logical operators
+### 📄 Day2_Conditionals.py  
+> Takes 3 numbers from user and checks if all or two are equal.  
+Also prints the max and min values if none are equal.
 
-## 📎 Certificates (to be added)
-- Python for Everybody – University of Michigan  
-- C for Everyone – UC Santa Cruz  
-- IoT & Embedded Systems – UC Irvine
+### 📄 Day3_Loops_CompareNumbers.py  
+> Accepts unlimited numeric input using `while True`.  
+Handles non-numeric input with `try/except`, then returns maximum and minimum values entered.  
+Used: `while`, `break`, `continue`, `int()`, `try/except`
+
+---
+
+## 📎 Certificates
+
+- 🎓 Python for Everybody – University of Michigan (2025)  
+📄 [`certificates/python_umich.pdf`](certificates/python_umich.pdf)
 
 ---
 
 🔗 LinkedIn: [linkedin.com/in/ahmet-emin-yakar-bbb6732a6](https://www.linkedin.com/in/ahmet-emin-yakar-bbb6732a6)  
-🧠 Student: Gazi University, Electrical & Electronics Engineering  
-👨‍💻 GitHub: [github.com/ahmeteminyakar](https://github.com/ahmeteminyakar)
+🧠 Student: Gazi University – Electrical & Electronics Engineering  
+👨‍💻 GitHub: [github.com/ahmeteminyakar](https://github.com/ahmeteminyakar/Embedded-Learn-Journey)
