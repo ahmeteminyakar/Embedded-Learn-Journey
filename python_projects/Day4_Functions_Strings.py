@@ -1,3 +1,22 @@
+"""
+📌 Project: Age Classifier using Functions
+📅 Day 4 of 41 – Embedded & IoT Journey
+
+🎯 Description:
+- Takes user's age as input
+- Classifies age into child, teen, adult, senior
+- Demonstrates function definition and return logic
+
+🛠️ Tools:
+- Python 3.x
+- def, return, int(), if/elif/else, input(), try/except
+
+Author: Ahmet Emin Yakar
+"""
+
+
+
+
 def classify_age(age):
     if age < 0:
         return "Invalid age."

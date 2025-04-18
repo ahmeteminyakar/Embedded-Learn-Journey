@@ -1,13 +1,19 @@
 """
-Day 2 – Conditional Statements Project (Advanced)
-Author: Ahmet E. Yakar
-Date: April 15, 2025
+📌 Project: Conditional Logic – Number Comparison
+📅 Day 2 of 41 – Embedded & IoT Journey
 
-This script asks the user to enter 3 numbers and:
-- Checks if all three are equal
-- Checks if only two are equal
-- Otherwise, prints the largest and smallest numbers
+🎯 Description:
+- Asks the user to enter 3 numbers
+- Checks if all or two of them are equal
+- Prints the largest and smallest number
+
+🛠️ Tools:
+- Python 3.x
+- Functions used: input(), float(), if/elif/else, max(), min()
+
+Author: Ahmet Emin Yakar
 """
+
 
 # Get input from the user
 num1 = input("First number: ")

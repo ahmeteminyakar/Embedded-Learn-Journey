@@ -1,3 +1,23 @@
+"""
+📌 Project: Min/Max Finder with Input Loop
+📅 Day 3 of 41 – Embedded & IoT Journey
+
+🎯 Description:
+- Takes unlimited numeric input from the user
+- Ends on 'done' keyword
+- Handles invalid inputs using try/except
+- Returns maximum and minimum values entered
+
+🛠️ Tools:
+- Python 3.x
+- while loop, break, continue, int(), try/except
+
+Author: Ahmet Emin Yakar
+"""
+
+
+
+
 def get_min_max():
     largest = None
     smallest = None
