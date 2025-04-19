@@ -46,6 +46,30 @@ Used: `def`, `return`, `int()`, `try/except`, `if/elif/else`
 
 ---
 
+
+## ⚙️ Day 7 – FSM Controlled LED Brightness (Arduino)
+
+This milestone marks the completion of my first **FSM (Finite State Machine)** driven hardware logic.  
+The system adjusts LED brightness using a push button and PWM outputs.
+
+### 🔧 Features:
+- LED brightness transitions: **Low → Medium → High**
+- Controlled via FSM logic using a single button
+- Implemented with `switch-case`, `analogWrite()`, and `INPUT_PULLUP`
+- Debounce logic included for stable button input
+
+### 🧠 Skills Gained:
+- FSM fundamentals and state transitions
+- PWM signal understanding via `analogWrite()`
+- Hardware-level input handling with pull-up configuration
+- Structuring clean, readable embedded code
+
+📂 Code: `/Day7_LED_PWM_FSM/LED_PWM_FSM.ino`  
+📷 Circuit: `schematic.png`  
+🎥 Demo Video: _(to be added)_
+
+---
+
 🔗 LinkedIn: [linkedin.com/in/ahmet-emin-yakar-bbb6732a6](https://www.linkedin.com/in/ahmet-emin-yakar-bbb6732a6)  
 🧠 Student: Gazi University – Electrical & Electronics Engineering  
 👨‍💻 GitHub: [github.com/ahmeteminyakar](https://github.com/ahmeteminyakar/Embedded-Learn-Journey)
