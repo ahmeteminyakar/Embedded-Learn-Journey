@@ -31,7 +31,10 @@ void loop() {
     case 2:
       analogWrite(ledPin, 255);  // High brightness
       break;
-  }
+    
 
+  }
+  
   lastButtonState = buttonState;  // Update button state for next loop
+  
 }
