@@ -60,7 +60,7 @@ The system adjusts LED brightness via PWM control based on button input.
 - Button debouncing and pull-up input logic
 - Clean, maintainable embedded code structure
 
-📂 Code: `/Day7_LED_PWM_FSM/LED_PWM_FSM.ino`  
+📂 Code: `/PWM_LED_FSM/LED_PWM_FSM.ino`  
 📷 Circuit Diagram: `schematic.png`  
 🎥 Demo Video: _[coming soon]_  
 
