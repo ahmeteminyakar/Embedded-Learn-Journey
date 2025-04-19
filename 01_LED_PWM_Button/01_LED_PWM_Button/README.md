@@ -74,3 +74,5 @@ Each button press cycles the LED brightness:
 ## 🎓 Part of: `Embedded-Learn-Journey – Day 7`
 
 This project is part of my 41-day Embedded Systems & IoT journey.
+
+🔗 LinkedIn: [linkedin.com/in/ahmet-emin-yakar-bbb6732a6](https://www.linkedin.com/in/ahmet-emin-yakar-bbb6732a6)
