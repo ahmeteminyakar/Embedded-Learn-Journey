@@ -16,7 +16,7 @@ void loop() {
 
   // Detect new button press (transition from HIGH to LOW)
   if (buttonState == LOW && lastButtonState == HIGH) {
-    state = (state + 1) % 3;  // Cy cle through 3 states: 0 → 1 → 2 → 0
+    state = (state + 1) % 3;  // Cycle through 3 states: 0 → 1 → 2 → 0
     delay(200);               // Simple debounce delay
   }
 
