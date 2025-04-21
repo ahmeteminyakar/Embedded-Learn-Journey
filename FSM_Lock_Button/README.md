@@ -49,9 +49,6 @@ Key functions used:
 [LED (+)] → D9 (PWM)
 [LED (–)] → GND via 220Ω
 
-yaml
-Kopyala
-Düzenle
 
 ---
 
