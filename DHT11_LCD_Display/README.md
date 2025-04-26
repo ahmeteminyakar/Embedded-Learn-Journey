@@ -70,7 +70,7 @@ This project is **open for educational and personal use**.
 - Developed by **Ahmet Emin Yakar**
 
 ### 🌐 Social Links
-- [LinkedIn: Ahmet Emin Yakar](https://www.linkedin.com/in/ahmet-emin-yakar-bbb6732a6/) *(örnek link, istersen gerçek linkini ver kral!)*
+- [LinkedIn: Ahmet Emin Yakar](https://www.linkedin.com/in/ahmet-emin-yakar-bbb6732a6/) 
 - [GitHub Profile](https://github.com/ahmeteminyakar)
 
 ---
