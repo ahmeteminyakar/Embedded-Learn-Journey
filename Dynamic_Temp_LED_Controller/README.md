@@ -86,14 +86,14 @@ Observe LED brightness changes and system warnings.
 Ahmet Emin Yakar
 Embedded Systems and IoT Developer | Gazi University
 
-GitHub Profile
+GitHub Profile: https://github.com/ahmeteminyakar/Embedded-Learn-Journey
 
-LinkedIn Profile
+LinkedIn Profile: https://www.linkedin.com/in/ahmet-emin-yakar-bbb6732a6/
 
 📌 Future Improvements (Optional)
 Automatic real-time DHT11 sensor readings
 
-LCD Display integration for live values
+LCD Display integration for live data
 
 WiFi integration using ESP32
 
