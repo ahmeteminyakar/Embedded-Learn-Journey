@@ -57,7 +57,7 @@ The focus is to simulate a simple embedded control logic: dynamic output control
 
 ## 🖥️ Example Serial Monitor Output
 
-```bash
+ ```bash
 Received Temperature: 24.0
 LED set to LOW brightness
 Waiting 3 seconds...
@@ -71,7 +71,7 @@ Received Temperature: 32.0
 LED set to FULL brightness
 Waiting 1 second...
 
-
+``` 
 
 🚀 How to Run
 Upload the .ino file to your Arduino board.
