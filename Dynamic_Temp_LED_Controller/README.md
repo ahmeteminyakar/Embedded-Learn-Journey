@@ -82,13 +82,6 @@ Enter temperature values manually to simulate sensor input.
 
 Observe LED brightness changes and system warnings.
 
-👤 Developer
-Ahmet Emin Yakar
-Embedded Systems and IoT Developer | Gazi University
-
-GitHub Profile: https://github.com/ahmeteminyakar/Embedded-Learn-Journey
-
-LinkedIn Profile: https://www.linkedin.com/in/ahmet-emin-yakar-bbb6732a6/
 
 📌 Future Improvements (Optional)
 Automatic real-time DHT11 sensor readings
@@ -98,4 +91,9 @@ LCD Display integration for live data
 WiFi integration using ESP32
 
 Data logging to cloud or local storage
+
+## 🔗 Connect
+📌 [LinkedIn – Ahmet Emin Yakar](https://www.linkedin.com/in/ahmet-emin-yakar-bbb6732a6)  
+🎓 Electrical & Electronics Engineering Student – Gazi University  
+
 
