@@ -96,4 +96,3 @@ Data logging to cloud or local storage
 📌 [LinkedIn – Ahmet Emin Yakar](https://www.linkedin.com/in/ahmet-emin-yakar-bbb6732a6)  
 🎓 Electrical & Electronics Engineering Student – Gazi University  
 
-

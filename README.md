@@ -1,93 +1,68 @@
-# 🧠 Embedded-Learn-Journey
+# 🚀 Embedded Systems Portfolio – Ahmet Emin Yakar
 
-📆 April 14 – May 24, 2025  
-🔌 41-Day Embedded Systems & IoT Engineering Sprint  
-🎓 Gazi University – Electrical & Electronics Engineering  
-👤 Ahmet Emin Yakar  
-🌐 GitHub: [ahmeteminyakar](https://github.com/ahmeteminyakar)  
-🔗 LinkedIn: [linkedin.com/in/ahmet-emin-yakar-bbb6732a6](https://www.linkedin.com/in/ahmet-emin-yakar-bbb6732a6)
+Welcome to my personal repository for C and Embedded Systems development.
 
----
+This repo documents my hands-on journey in mastering core embedded engineering concepts through modular, testable, and scalable systems. Projects are built using low-level C, Arduino environments, UART interfaces, and embedded control logic.
 
-## 📂 Project Directory
-
-### `Day1_PythonBasics/Day1_PythonBasics.py`  
-🔹 Basic console interaction and data types  
-🧠 Used: `print()`, `input()`, `int()`, `float()`
+Each project focuses on solving real-world control problems using efficient code architecture and system thinking.
 
 ---
 
-### `Day2_Conditionals/Day2_Conditionals.py`  
-🔹 Compare three numbers and classify equality  
-🧠 Used: `if`, `elif`, `else`, `max()`, `min()`
+## 🛠️ Core Skills Demonstrated
+
+- Procedural C programming (input, output, conditionals, functions)
+- Embedded logic systems (FSMs, state-based control)
+- Arduino and microcontroller programming
+- UART and Serial Communication
+- Input validation and fault handling
+- Modular project architecture and documentation
+- GitHub version control and Git CLI workflow
 
 ---
 
-### `Day3_Loops/Day3_Loops.py`  
-🔹 Dynamic input loop with error handling, returns max/min  
-🧠 Used: `while`, `try/except`, `break`, `continue`
+## 📂 Projects in This Repository
+
+| Project                            | Language / Platform | Concepts Covered                                 |
+|------------------------------------|----------------------|--------------------------------------------------|
+| Temperature Classifier             | C (GCC)              | `scanf`, `char*` returns, logic abstraction      |
+| Humidity + Temp Dual Analysis      | C (GCC)              | Multi-input handling, alert system design        |
+| Button-Based FSM Lock System       | Arduino (.ino)       | Finite State Machine, input sequencing           |
+| (Upcoming) UART → Python GUI       | C / Python           | Serial read, string parsing, dashboard design    |
+| (Upcoming) EEPROM Logger System    | Arduino              | Non-volatile storage, circular buffer logic      |
 
 ---
 
-### `Day4_Functions_Strings/Day4_Functions_Strings.py`  
-🔹 Takes user info, checks surname length & age classification  
-🧠 Used: `def`, `return`, `.lower()`, `len()`, `try/except`
+## 📌 Project Approach
+
+Each system is designed with:
+- **Single-responsibility logic blocks**
+- **Readable and maintainable C**
+- **Inline comments and function-based design**
+- **README.md with explanation of logic and thresholds**
+
+Projects can be compiled using `gcc` or uploaded via Arduino IDE, depending on platform.
 
 ---
 
-### `Day7_LED_PWM_FSM/LED_PWM_FSM.ino`  
-🔹 FSM-driven LED brightness system (Single Button, PWM)  
-🧠 Concepts: `analogWrite()`, `INPUT_PULLUP`, FSM, debounce
+## 🧑‍💻 About Me
 
-🧰 Schematic: `schematic.png`  
-💾 Code: `LED_PWM_FSM.ino`  
+**Ahmet Emin Yakar**  
+Electrical & Electronics Engineering – Gazi University  
+🔗 [LinkedIn](https://www.linkedin.com/in/ahmet-emin-yakar-bbb6732a6/)  
+💻 [GitHub](https://github.com/ahmeteminyakar)
 
----
-
-### `Day8_DualButton_PWM_FSM/pwm_led_fsm2.ino`  
-🔹 2 buttons control 2 LEDs → brightness up/down via FSM  
-🧠 Concepts: dual input FSM, modulo logic, synchronized PWM
-
-🧰 Schematic: `schematic.png`  
-💾 Code: `DualButton_PWM_FSM.ino`  
+I'm developing a career in Embedded Systems and IoT — blending C fundamentals with real-time control design, sensor interfaces, and system-level integration.
 
 ---
 
-### `Day9_ButtonSequenceLock/fsm_lock_button.ino`  
-🔹 Simulated lock system → LED activates only with B1 → B2 → B1 sequence  
-🧠 Concepts: finite state verification, reset on wrong input, system logic flow
+## 🧠 Learning Framework
 
-🧰 Schematic: `schematic.png`  
-💾 Code: `FSM_Lock_Button.ino`  
-
----
-
-## 🎓 Certifications
-
-📄 `certificates/python_umich.pdf`  
-🎓 Python for Everybody – University of Michigan (Coursera, 2025)  
+This repository is part of a focused learning model to:
+- Build from scratch (not copy)
+- Understand code flow and memory logic
+- Apply C to real embedded challenges
+- Document and structure like a professional engineer
 
 ---
 
-## 💡 Core Skills Gained
-
-- Embedded C / Python integration
-- Finite State Machine design (FSM)
-- PWM signal control on Arduino
-- GPIO handling with `INPUT_PULLUP`
-- Button debounce logic
-- Serial communication (UART-ready)
-- Clean project structure + documentation
-
----
-
-## 🧭 Vision Statement
-
-> “This repository is more than code — it's my live transformation into a systems engineer.  
-> Each commit marks a checkpoint in my evolution from student to builder.”  
->  
-> — Ahmet Emin Yakar
-
----
-
-📁 This repo is under active development — stay tuned for ESP32, GUI dashboards, and MQTT IoT architecture in the upcoming stages.
+📌 This is a living portfolio. More systems and integrations coming soon.
