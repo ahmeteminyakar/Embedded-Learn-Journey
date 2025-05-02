@@ -12,6 +12,8 @@ Each project focuses on solving real-world control problems using efficient code
 
 - Procedural C programming (input, output, conditionals, functions)
 - Embedded logic systems (FSMs, state-based control)
+- Multi-sensor data classification
+- Fault detection and system failure analysis
 - Arduino and microcontroller programming
 - UART and Serial Communication
 - Input validation and fault handling
@@ -22,13 +24,14 @@ Each project focuses on solving real-world control problems using efficient code
 
 ## 📂 Projects in This Repository
 
-| Project                            | Language / Platform | Concepts Covered                                 |
-|------------------------------------|----------------------|--------------------------------------------------|
-| Temperature Classifier             | C (GCC)              | `scanf`, `char*` returns, logic abstraction      |
-| Humidity + Temp Dual Analysis      | C (GCC)              | Multi-input handling, alert system design        |
-| Button-Based FSM Lock System       | Arduino (.ino)       | Finite State Machine, input sequencing           |
-| (Upcoming) UART → Python GUI       | C / Python           | Serial read, string parsing, dashboard design    |
-| (Upcoming) EEPROM Logger System    | Arduino              | Non-volatile storage, circular buffer logic      |
+| Project                            | Language / Platform | Concepts Covered                                       |
+|------------------------------------|----------------------|--------------------------------------------------------|
+| Temperature Classifier             | C (GCC)              | `scanf`, `char*` returns, logic abstraction            |
+| Humidity + Temp Dual Analysis      | C (GCC)              | Multi-sensor inputs, conditional branches              |
+| ⚠️ Multi-Sensor System Report      | C (GCC)              | Environmental analysis, classification functions, alerts |
+| Button-Based FSM Lock System       | Arduino (.ino)       | Finite State Machine, input sequencing                 |
+| (Upcoming) UART → Python GUI       | C / Python           | Serial read, string parsing, dashboard design          |
+| (Upcoming) EEPROM Logger System    | Arduino              | Non-volatile storage, circular buffer logic            |
 
 ---
 
@@ -44,7 +47,7 @@ Projects can be compiled using `gcc` or uploaded via Arduino IDE, depending on p
 
 ---
 
-## 🧑‍💻 About Me
+## 👤 About Me
 
 **Ahmet Emin Yakar**  
 Electrical & Electronics Engineering – Gazi University  
