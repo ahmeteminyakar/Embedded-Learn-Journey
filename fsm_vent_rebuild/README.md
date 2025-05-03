@@ -1,103 +1,88 @@
-🌀 Auto-Ventilation System — FSM Controller (Arduino)
-Author: Ahmet Emin Yakar
-Role: Embedded Systems Engineer in Training
-Date: May 2025
-Repository Path: /Day15_FSM_Advanced/fsm_vent_rebuild.ino
-Type: Real-time FSM-based actuator controller with sensor input, timed transitions, and EEPROM logging
+project:
+  📛 name: "Auto-Ventilation FSM Controller"
+  👤 author: "Ahmet Emin Yakar"
+  🎓 role: "Embedded Systems Engineer in Training"
+  📅 date: "2025-05-03"
+  🗂️ repo_path: "/Day15_FSM_Advanced/fsm_vent_rebuild.ino"
+  🧠 description: >
+    Real-time FSM controller using Arduino Uno and DHT11.
+    Controls LED and Buzzer based on temperature thresholds,
+    with non-blocking millis()-based timing and EEPROM-backed cycle logging.
 
-🧠 Project Summary
-This project implements a real-world finite state machine (FSM) on an Arduino Uno to control an auto-ventilation system based on temperature input. Using non-blocking millis() timing, the system manages state transitions, output activation (LED, buzzer), and persistent state logging with EEPROM. Designed to model an embedded control logic suitable for HVAC, IoT ventilation, or environmental chambers.
+fsm:
+  🔁 states:
+    - "IDLE"
+    - "VENT_WAIT"
+    - "VENT_ACTIVE"
+  🔀 transitions:
+    - from: "IDLE"
+      to: "VENT_WAIT"
+      condition: "🌡️ temp ≥ 28°C"
+    - from: "VENT_WAIT"
+      to: "IDLE"
+      condition: "🌡️ temp < 28°C"
+    - from: "VENT_WAIT"
+      to: "VENT_ACTIVE"
+      condition: "🌡️ temp ≥ 28°C AND ⏱️ 10s passed"
+    - from: "VENT_ACTIVE"
+      to: "IDLE"
+      condition: "🌡️ temp < 28°C OR ⏱️ 30s timeout"
+    - from: "*"
+      to: "IDLE"
+      condition: "⚠️ Global timeout (30s)"
 
-⚙️ System Overview
-FSM States:
-State	Behavior
-IDLE	Wait for high temp; all outputs OFF
-VENT_WAIT	LED blinks; timer starts; waits for confirm
-VENT_ACTIVE	Buzzer ON; LED ON; logs cycle to EEPROM
+hardware:
+  🔌 components:
+    - 📦 name: "DHT11"
+      🔗 pin: "D2"
+      🧭 type: "Input (Temperature Sensor)"
+    - 📦 name: "LED"
+      🔗 pin: "D9"
+      🧭 type: "Output (Blink/ON)"
+    - 📦 name: "Buzzer"
+      🔗 pin: "D10"
+      🧭 type: "Output (Alert)"
+  💡 wiring_notes: >
+    - DHT11 connected to D2 (with 5V and GND).
+    - LED on D9 with 220Ω resistor.
+    - Active Buzzer connected directly to D10.
+    - All components use shared GND.
 
-Transitions:
-From → To	Condition
-IDLE → VENT_WAIT	temp ≥ 28°C
-VENT_WAIT → IDLE	temp < 28°C
-VENT_WAIT → ACTIVE	temp ≥ 28°C AND 10s passed
-VENT_ACTIVE → IDLE	temp < 28°C or 30s timeout
-(Any → IDLE)	global timeout (30s) — reset failsafe
+features:
+  🎯 highlights:
+    - "⚙️ Finite State Machine (FSM) structure"
+    - "⏱️ Non-blocking timing using millis()"
+    - "💾 EEPROM cycle logging (VENT_ACTIVE count)"
+    - "💡 LED blinking logic in VENT_WAIT"
+    - "🔔 Buzzer ON in VENT_ACTIVE"
+    - "🧠 `isnan()` validation for sensor reads"
+    - "♻️ Global timeout failsafe after 30s"
 
-🔌 Wiring Diagram
-Component	Pin	Description
-DHT11	D2	Temperature input sensor
-LED	D9	Visual indicator output
-Buzzer	D10	Audible alert output
+serial_output_example: |
+  TEMP : 27.4
+  TEMP : 28.1
+  transition : IDLE --> VENT_WAIT
+  ...
+  transition : VENT_WAIT --> VENT_ACTIVE
+  VENT CYCLE COUNT: 4
+  transition : VENT_ACTIVE --> IDLE
 
-DHT11 powered via 5V and GND
+future_upgrades:
+  🚀 roadmap:
+    - "🖥️ Add I2C LCD to display state + temp + cycles"
+    - "🧼 EEPROM reset button"
+    - "📡 ESP32 migration: Wi-Fi dashboard"
+    - "🧱 Modular FSM structure with handlers"
+    - "🧪 Python test harness via UART"
 
-LED uses 220Ω resistor
-
-Buzzer is active type (driven directly)
-
-🧩 Core Features
-⏱️ millis()-based timing (no delay())
-
-🔁 Finite State Machine using enum + stateEntryTime
-
-🔔 Outputs:
-
-LED blinks during VENT_WAIT
-
-LED solid ON during VENT_ACTIVE
-
-Buzzer ON during VENT_ACTIVE
-
-💾 EEPROM logging:
-
-Each VENT_ACTIVE state increases cycle counter
-
-Stored in EEPROM address 0
-
-Printed at boot via Serial
-
-🧪 Runtime Serial Output Example
-yaml
-Kopyala
-Düzenle
-TEMP : 27.4
-TEMP : 28.1
-transition : IDLE --> VENT_WAIT
-...
-transition : VENT_WAIT --> VENT_ACTIVE
-VENT CYCLE COUNT: 4
-transition : VENT_ACTIVE --> IDLE
-
-
-📦 Future Upgrades
-I2C LCD display: show temp, state, cycle count
-
-Add button to clear EEPROM counter
-
-ESP32 migration: Wi-Fi + mobile dashboard integration
-
-Modular FSM structure with .h/.cpp files
-
-Test harness using Python + UART monitoring
-
-🎓 Engineering Highlights
-Real-time FSM modeling with state-aware timing
-
-EEPROM write safety via EEPROM.update()
-
-Input validation with isnan()
-
-Edge-triggered state logic with millis() delta
-
-Strong separation of logic + output + timing layers
-
-✅ Skills Demonstrated
-Area	Technology	Skill
-Embedded C++	Arduino	FSM logic, EEPROM, GPIO control
-System Logic	FSM Design	State architecture + timing logic
-Debug	Serial Output	State tracing and sensor logging
-Persistence	EEPROM	Counter logging and recovery
-
+skills_demonstrated:
+  📌 areas:
+    - "Embedded C++ with Arduino"
+    - "Real-world FSM design"
+    - "millis() timing architecture"
+    - "EEPROM safety with update()"
+    - "Sensor validation + event logging"
+    - "Serial debug-based system trace"
 
 
 ## 👤 Author
