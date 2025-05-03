@@ -6,8 +6,10 @@ project:
   📅 date: "2025-05-03"
   🗂️ repo_path: "/Day15_FSM_Advanced/fsm_vent_rebuild.ino"
   🧠 description: >
-    Real-time FSM controller using Arduino Uno and DHT11. Controls LED and Buzzer based on temperature thresholds,
-    with non-blocking millis()-based timing and EEPROM-backed cycle logging. Designed for smart HVAC / IoT devices.
+    Real-time FSM controller using Arduino Uno and DHT11.
+    Controls LED and Buzzer based on temperature thresholds,
+    with non-blocking millis()-based timing and EEPROM-backed cycle logging.
+    Designed for smart HVAC / IoT devices.
 
 fsm:
   🔁 states:
@@ -43,9 +45,10 @@ hardware:
       🔗 pin: "D10"
       🧭 type: "Output (Alert)"
   ⚡ wiring_notes: >
-    - LED uses 220Ω resistor
+    - DHT11 connects to D2 with 5V and GND
+    - LED uses 220Ω resistor on D9
     - Buzzer is active and driven from D10
-    - All share GND with 5V system
+    - All components share GND with the Arduino board
 
 eeprom:
   💾 logging_enabled: true
@@ -67,7 +70,7 @@ timing:
       use: "Failsafe reset to IDLE"
 
 serial:
-  🖥️ output_example: |
+  💻 output_example: |
     TEMP : 27.4
     TEMP : 28.1
     transition : IDLE --> VENT_WAIT
@@ -83,7 +86,7 @@ features:
     - "💾 EEPROM cycle logging with write protection"
     - "💡 LED blink in wait state"
     - "🔔 Buzzer in active state"
-    - "🛡️ Global timeout failsafe"
+    - "⚠️ Global timeout failsafe"
 
 skills_demonstrated:
   🧠 areas:
@@ -93,6 +96,14 @@ skills_demonstrated:
     - "EEPROM usage and flash wear management"
     - "Embedded-style Serial output for traceability"
 
+files:
+  📁 structure:
+    - "fsm_vent_rebuild.ino"
+    - "README.md"
+    - "fsm_ascii_diagram.txt"
+    - "fsm_wiring.fzz (optional)"
+
+---
 
 ## 👤 Author
 
