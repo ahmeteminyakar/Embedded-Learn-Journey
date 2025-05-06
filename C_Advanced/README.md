@@ -1,103 +1,71 @@
+# 🔧 C Pointer & Struct Mastery
 
-C Pointer & Struct
+Low-level pointer and memory operations using ANSI C, simulating embedded system data handling patterns such as sensor swapping, struct sorting, and memory inspection.
+
+---
+
+## 📦 Project Modules
+
+| File | Description |
+|------|-------------|
+| `ptr_math.c` | Demonstrates raw pointer arithmetic over integer arrays using `*p`, `p[i]`, and `*(p+i)` syntax. |
+| `swap_func.c` | Swaps two integers via pointer dereferencing. Core logic with `*a`, `*b`, and temporary variable buffering. |
+| `struct_mem.c` | Visualizes memory layout, alignment and padding of a `Sensor` struct using `%p` and `sizeof()`. |
+| `struct_pointer_access.c` | Access and update struct fields via pointer using `->` and `(*ptr).field`. |
+| `sensor_swap.c` | Swaps two `Sensor` structs if value A > B using pointer logic. |
+| `sensor_compare_system.c` | Mini sorting engine for an array of 3 `Sensor` structs by `reading` value with pointer-based comparison logic. |
+
+---
+
+## 🧠 Core Concepts
+
+- ✅ Pointer arithmetic: `p++`, `*(p+i)`, `p[i]`
+- ✅ Pointer-to-struct access: `ptr->field`, `(*ptr).field`
+- ✅ Struct padding & memory alignment
+- ✅ Swap logic with pointer references
+- ✅ Manual sorting without stdlib
+- ✅ Memory layout tracing using `%p` casting
+
+---
+
+## ⚙️ Tools & Environment
+
+| Tool / Command | Purpose |
+|----------------|---------|
+| `GCC / Clang`  | Compile & run `.c` files |
+| `VSCode / Terminal` | Code + testing |
+| `sizeof()`     | Struct size evaluation |
+| `%p`, `(void*)` | Print address for memory visualization |
+
+---
+
+## 🚀 Demo Output Snapshot (Example)
+
+```c
+Sensor A: value = 53, address = 0x7ffeefbff5c0  
+Sensor B: value = 42, address = 0x7ffeefbff5d0  
+Swapped → Sensor A now: value = 42  
+📚 Learning Outcomes
+Embedded C pointer fluency
+
+Struct-based modeling for sensor data
+
+Predicting memory layout (alignment/padding)
+
+Designing clean swap & sort logic with pointers
+
+Foundation for embedded systems memory handling
 
 
+🧩 Future Extension
+Add dynamic struct array allocation
 
+Integrate qsort() for performance comparison
 
-This session focuses on mastering low-level pointer arithmetic, struct memory layout, and pointer-to-struct manipulation in ANSI C.
-It simulates operations common in embedded sensor systems: value swapping, sorting, and memory inspection.
+Extend Sensor with timestamp & ID fields
 
-🧰 Tools Used
-Tool / Feature	Purpose
-GCC / Clang	Compiling and running .c files
-VSCode / CLI	Editor / terminal work
-sizeof()	Struct size evaluation
-%p, (void*)	Memory address inspection
-
-⚙️ Subsystems & Logic
-Pointer Arithmetic – Navigation through arrays using *p, p[i], *(p+i)
-
-Swap Functions – Swapping values and structs using pointer logic
-
-Struct Memory Mapping – Understanding field alignment and padding
-
-Pointer-to-Struct (->) – Clean access to struct members
-
-Sensor Sorting System – Rank and sort struct array by reading value
-
-💻 Code Files
-🔸 ptr_math.c
-Simulates raw pointer math on an integer array.
-
-Key functions:
-
-*p, *(p+i), p[i]
-
-p++, ++p
-
-🔸 swap_func.c
-Swaps two integers via pointers.
-
-Concepts:
-
-*a, *b dereferencing
-
-Temporary buffering logic
-
-🔸 struct_mem.c
-Prints memory layout of a struct Sensor and explains padding.
-
-Concepts:
-
-sizeof()
-
-%p to inspect addresses
-
-Alignment visualization
-
-🔸 struct_pointer_access.c
-Access and modify a struct using a pointer.
-
-Concepts:
-
-ptr->field
-
-*ptr vs ptr->
-
-🔸 sensor_swap.c
-Compares two sensor structs and swaps them using pointer-based logic.
-
-Logic:
-
-If Sensor A has a higher value, swap it with B
-
-Inspect memory layout and struct field changes
-
-🔸 sensor_compare_system.c
-Mini-project: Sorts 3 sensors by reading value using pointer-based swap logic.
-
-Key Features:
-
-Struct array simulation
-
-Sorting without stdlib
-
-Full memory address print for each field
-
-Prints sorted sensor list
-
-🧠 Concepts Practiced
-Pointer fundamentals
-
-Struct-based data modeling
-
-Memory layout prediction
-
-Function design with pointers
-
-Manual sorting algorithms
+Build UART packet encoder for struct data
 
 ## 🔗 Connect
 📌 [LinkedIn – Ahmet Emin Yakar](https://www.linkedin.com/in/ahmet-emin-yakar-bbb6732a6)  
 🎓 Electrical & Electronics Engineering Student – Gazi University  
-
