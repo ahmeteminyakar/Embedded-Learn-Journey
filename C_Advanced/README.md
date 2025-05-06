@@ -45,6 +45,9 @@ Low-level pointer and memory operations using ANSI C, simulating embedded system
 Sensor A: value = 53, address = 0x7ffeefbff5c0  
 Sensor B: value = 42, address = 0x7ffeefbff5d0  
 Swapped → Sensor A now: value = 42  
+
+```
+---
 📚 Learning Outcomes
 Embedded C pointer fluency
 
