@@ -49,6 +49,7 @@ Swapped → Sensor A now: value = 42
 ```
 ---
 📚 Learning Outcomes
+---
 Embedded C pointer fluency
 
 Struct-based modeling for sensor data
@@ -59,8 +60,10 @@ Designing clean swap & sort logic with pointers
 
 Foundation for embedded systems memory handling
 
+---
 
 🧩 Future Extension
+---
 Add dynamic struct array allocation
 
 Integrate qsort() for performance comparison
