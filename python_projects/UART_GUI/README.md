@@ -63,9 +63,7 @@ python uart_gui.py
 The GUI will launch and show one packet per second with color-coded validation.
 
 ✅ Example Output
-pgsql
-Kopyala
-Düzenle
+
 TEMP:24.3;HUM:50.2           ← ✅ Green (valid)
 MISMATCH!                    ← ❌ Red (bad checksum)
 FORMAT ERROR                 ← ❌ Red (corrupt format)
