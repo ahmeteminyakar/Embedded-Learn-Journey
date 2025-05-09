@@ -1,12 +1,12 @@
 #include <stdio.h>
 
-struct Sensor {
+typedef struct {
     char id;
     int reading;
     char status;
-};
+} Sensor;
 
-void printSensor(struct Sensor *s) {
+void printSensor(Sensor *s) {
     printf("ID     : %c\n", s->id);
     printf("Reading: %d\n", s->reading);
     printf("Status : %c\n", s->status);
@@ -18,14 +18,13 @@ void printSensor(struct Sensor *s) {
     printf("-------------\n");
 }
 
-void swapSensors(struct Sensor *a, struct Sensor *b) {
-    struct Sensor temp = *a;
+void swapSensors(Sensor *a, Sensor *b) {
+    Sensor temp = *a;
     *a = *b;
     *b = temp;
 }
 
-void sortSensors(struct Sensor *a, struct Sensor *b, struct Sensor *c) {
-    // Descending sort based on reading
+void sortSensors(Sensor *a, Sensor *b, Sensor *c) {
     if (a->reading < b->reading)
         swapSensors(a, b);
     if (a->reading < c->reading)
@@ -35,9 +34,9 @@ void sortSensors(struct Sensor *a, struct Sensor *b, struct Sensor *c) {
 }
 
 int main() {
-    struct Sensor A = {'A', 500, 'O'};
-    struct Sensor B = {'B', 670, 'O'};
-    struct Sensor C = {'C', 1000, 'F'};
+    Sensor A = {'A', 500, 'O'};
+    Sensor B = {'B', 670, 'O'};
+    Sensor C = {'C', 1000, 'F'};
 
     printf("== ORIGINAL STATS ==\n");
     printSensor(&A);
