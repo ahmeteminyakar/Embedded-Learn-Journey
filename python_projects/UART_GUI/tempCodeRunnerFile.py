@@ -63,25 +63,17 @@ def simulate_uart():
     global index, current_state
 
     if index < len(test_lines):
-        # Set WAIT state first
+        # BEFORE the packet: enter WAIT state
         current_state = FSMState.WAIT
         label.config(text=f"[{current_state.name}] Waiting...", fg="black")
 
-        # Wait 500ms, then run validation
-        root.after(500, process_uart_packet)
+        # Simulate delay + process next packet
+        line = test_lines[index]
+        print(f"Simulated UART: {line}")
+        validate_and_display(line)
+        index += 1
 
-    else:
-        label.config(text="🛑 End of stream.", fg="blue")
-
-
-def process_uart_packet():
-    global index
-    line = test_lines[index]
-    print(f"Simulated UART: {line}")
-    validate_and_display(line)
-    index += 1
-    root.after(1000, simulate_uart)  # Schedule next cycle
-
+    root.after(1000, simulate_uart)
 
 simulate_uart()
 root.mainloop()
