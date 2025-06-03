@@ -42,7 +42,7 @@ write_register(regs, 2, 0xABCD1234);
 
 *(base + offset)
 Core pattern used for offset-based memory access, simulating register maps.
-
+```c
 🧠 Core Learnings
 int* ptr = &val; → Points to variable’s address
 
@@ -60,22 +60,4 @@ int** (double pointers) allow layered memory abstraction (important for RTOS and
 
 %ld → Signed long decimal, used for pointer distance in bytes
 
-📦 Suggestions for Future Structure
-Consider separating:
 
-C_Basics
-
-C_Pointer_Math
-
-Memory_Map_Sim
-
-Embedded_Register_Sim
-
-To reflect clean mental models for embedded software work.
-
-🚀 Next Steps
-Implement a basic simulated memory-mapped peripheral driver
-
-Practice bit masking and bit fields
-
-Start FSM_Button_Controller using pointer-state transition mapping
