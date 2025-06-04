@@ -38,11 +38,9 @@ This folder contains progressive exercises, explanations, and experiments focuse
 
 ```c
 write_register(regs, 2, 0xABCD1234);
-
-
-*(base + offset)
-Core pattern used for offset-based memory access, simulating register maps.
-```c
+/* Core pattern used for offset-based memory access, simulating register maps */
+*(base + offset);
+```
 🧠 Core Learnings
 int* ptr = &val; → Points to variable’s address
 
