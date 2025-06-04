@@ -4,7 +4,7 @@
 #define BUZZERPIN 10
 #define DHTPIN 2
 #define DHTTYPE DHT11
-#define VENT_COUNTER_ADDR 0;
+#define VENT_COUNTER_ADDR 0
 
 DHT dht(DHTPIN , DHTTYPE);
 
